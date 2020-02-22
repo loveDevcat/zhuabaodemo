@@ -5,6 +5,7 @@ import sys
 import requests
 
 # sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+from test import scan_dic
 
 print("开始执行")
 headers = {
@@ -96,6 +97,8 @@ data = {"toServerID":"2055",
         }
 d1 = {"apiVersion":"3","cChannelId":"0","cClientVersionCode":"2019101809","cClientVersionName":"3.46.202","cCurrentGameId":"20001","cDeviceCPU":"ARM64","cDeviceId":"eb51be8d777cf88fe561c08eb6a9bb9e3fde35e8","cDeviceIdfa":"0AECED4C-0439-44FB-9894-0417A68EA543","cDeviceMem":"2086879232","cDeviceModel":"iPhone","cDeviceNet":"WiFi","cDeviceSP":"中国电信","cDeviceScreenHeight":"667","cDeviceScreenWidth":"375","cGameId":"20001","cGzip":"1","cRand":"1582285217338","cSystem":"ios","cSystemVersionCode":"12.3.1","cSystemVersionName":"iOS","friendUserId":"358403327","gameAreaId":"2","gameId":"20001","gameOpenId":"8AD687FC68C4650858AA1A6CC166AAF6","gameRoleId":"106588992","gameServerId":"2055","gameUserSex":"0","isMi":"0","lastTime":"0","option":"0","roleId":"118026253","token":"UHcG2DJF","userId":"90873130"
 }
+# enty = scan_dic()
+# s1 = enty.header
 h3 = {"Host":"ssl.kohsocialapp.qq.com","Content-Type":"application/x-www-form-urlencoded","Accept-Encoding":"br, gzip, deflate","Cookie":"pgv_pvid=5457054890; pgv_pvi=3969268736; eas_sid=u1I5h738S2D27572c8D8M1K0y0","Connection":"keep-alive","Accept":"*/*","User-Agent":"smoba/3.46.202 (iPhone; iOS 12.3.1; Scale/2.00)","Accept-Language":"zh-Hans-CN;q=1, zh-Hant-CN;q=0.9, ko-KR;q=0.8","noencrypt":"1","Content-Length":"697" }
 d3 = {"apiVersion":"3","cChannelId":"0","cClientVersionCode":"2019101809","cClientVersionName":"3.46.202","cCurrentGameId":"20001","cDeviceCPU":"ARM64","cDeviceId":"eb51be8d777cf88fe561c08eb6a9bb9e3fde35e8","cDeviceIdfa":"0AECED4C-0439-44FB-9894-0417A68EA543","cDeviceMem":"2086879232","cDeviceModel":"iPhone","cDeviceNet":"WiFi","cDeviceSP":"%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1","cDeviceScreenHeight":"667","cDeviceScreenWidth":"375","cGameId":"20001","cGzip":"1","cRand":"1582285217338","cSystem":"ios","cSystemVersionCode":"12.3.1","cSystemVersionName":"iOS","friendUserId":"358403327","gameAreaId":"2","gameId":"20001","gameOpenId":"8AD687FC68C4650858AA1A6CC166AAF6","gameRoleId":"106588992","gameServerId":"2055","gameUserSex":"0","isMI":"0","lastTime":"0","option":"0","roleId":"118026253","token":"UHcG2DJF","userId":"90873130"
 }
@@ -106,36 +109,8 @@ h10 = {"Host": "ssl.kohsocialapp.qq.com:10001", "Content-Type": "application/x-w
       "Accept": "*/*", "User-Agent": "smoba/3.46.202(iPhone;iOS12.3.1;Scale/2.00)",
       "Accept-Language": "zh-Hans-CN;q=1,zh-Hant-CN;q=0.9,ko-KR;q=0.8", "noencrypt": "1", "Content-Length": "696"}
 d10 = {"apiVersion":"3","cChannelId":"0","cClientVersionCode":"2019101809","cClientVersionName":"3.46.202","cCurrentGameId":"20001","cDeviceCPU":"ARM64","cDeviceId":"eb51be8d777cf88fe561c08eb6a9bb9e3fde35e8","cDeviceIdfa":"0AECED4C-0439-44FB-9894-0417A68EA543","cDeviceMem":"2086879232","cDeviceModel":"iPhone","cDeviceNet":"WiFi","cDeviceSP":"%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1","cDeviceScreenHeight":"667","cDeviceScreenWidth":"375","cGameId":"20001","cGzip":"1","cRand":"1582371965712","cSystem":"ios","cSystemVersionCode":"12.3.1","cSystemVersionName":"iOS","friendUserId":"90873130","gameAreaId":"2","gameId":"20001","gameOpenId":"8AD687FC68C4650858AA1A6CC166AAF6","gameRoleId":"106588992","gameServerId":"2055","gameUserSex":"0","isMI":"0","lastTime":"0","option":"0","roleId":"106588992","token":"3dkw46eN","userId":"90873130"}
-h20 = {"Host": "ssl.kohsocialapp.qq.com:10001", "Content-Type": "application/x-www-form-urlencoded", "Accept-Encoding": "br,gzip,deflate", "Cookie": "pgv_pvid=5457054890;pgv_pvi=3969268736;eas_sid=u1I5h738S2D27572c8D8M1K0y0", "Connection": "keep-alive", "Accept": "*/*", "User-Agent": "smoba/3.46.202(iPhone;iOS12.3.1;Scale/2.00)", "Accept-Language": "zh-Hans-CN;q=1,zh-Hant-CN;q=0.9,ko-KR;q=0.8", "noencrypt": "1", "Content-Length": "696"}
-d20 = {"apiVersion": "3", "cChannelId": "0", "cClientVersionCode": "2019101809", "cClientVersionName": "3.46.202",
-      "cCurrentGameId": "20001", "cDeviceCPU": "ARM64", "cDeviceId": "eb51be8d777cf88fe561c08eb6a9bb9e3fde35e8",
-      "cDeviceIdfa": "0AECED4C-0439-44FB-9894-0417A68EA543", "cDeviceMem": "2086879232", "cDeviceModel": "iPhone",
-      "cDeviceNet": "WiFi", "cDeviceSP": "%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1", "cDeviceScreenHeight": "667",
-      "cDeviceScreenWidth": "375", "cGameId": "20001", "cGzip": "1", "cRand": "1582371965712", "cSystem": "ios",
-      "cSystemVersionCode": "12.3.1", "cSystemVersionName": "iOS", "friendUserId": "90873130", "gameAreaId": "2",
-      "gameId": "20001", "gameOpenId": "8AD687FC68C4650858AA1A6CC166AAF6", "gameRoleId": "106588992",
-      "gameServerId": "2055", "gameUserSex": "0", "isMI": "0", "lastTime": "0", "option": "0", "roleId": "106588992",
-      "token": "3dkw46eN", "userId": "90873130"}
-h30 = {"Host": "ssl.kohsocialapp.qq.com:10001", "Content-Type": "application/x-www-form-urlencoded",
-      "Accept-Encoding": "br,gzip,deflate",
-      "Cookie": "pgv_pvid=5457054890;pgv_pvi=3969268736;eas_sid=u1I5h738S2D27572c8D8M1K0y0", "Connection": "keep-alive",
-      "Accept": "*/*",
-      "User-Agent": "smoba/3.46.202(iPhone;iOS12.3.1;Scale/2.00)",
-      "Accept-Language": "zh-Hans-CN;q=1,zh-Hant-CN;q=0.9,ko-KR;q=0.8", "noencrypt": "1", "Content-Length": "696"}
-d30 = {"apiVersion": "3", "cChannelId": "0", "cClientVersionCode": "2019101809", "cClientVersionName": "3.46.202",
-      "cCurrentGameId": "20001", "cDeviceCPU": "ARM64",
-      "cDeviceId": "eb51be8d777cf88fe561c08eb6a9bb9e3fde35e8", "cDeviceIdfa": "0AECED4C-0439-44FB-9894-0417A68EA543",
-      "cDeviceMem": "2086879232", "cDeviceModel": "iPhone", "cDeviceNet": "WiFi",
-      "cDeviceSP": "%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1",
-      "cDeviceScreenHeight": "667", "cDeviceScreenWidth": "375", "cGameId": "20001", "cGzip": "1",
-      "cRand": "1582371965712", "cSystem": "ios", "cSystemVersionCode": "12.3.1", "cSystemVersionName": "iOS",
-      "friendUserId": "90873130", "gameAreaId": "2", "gameId": "20001",
-      "gameOpenId": "8AD687FC68C4650858AA1A6CC166AAF6",
-      "gameRoleId": "106588992", "gameServerId": "2055", "gameUserSex": "0", "isMI": "0", "lastTime": "0",
-      "option": "0", "roleId": "106588992", "token": "3dkw46eN", "userId": "90873130"}
-
 # response = requests.post("https://ssl.kohsocialapp.qq.com:10001/role/h5getplaydetail", headers=headers,data=data )
-response = requests.post("https://ssl.kohsocialapp.qq.com:10001/play/getmatchlist", headers=h30,data=d30 )
+response = requests.post("https://ssl.kohsocialapp.qq.com:10001/play/getmatchlist", headers=h10,data=d10 )
 print(1)
 print(response)
 print(response.text)
